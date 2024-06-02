@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Terjemah">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gold"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/jawaindo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:text="Jawa - Indonesia Literatur"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android.textSize="18dp"
+            android:layout_marginTop="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/indojawa"
+            android.textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/jawaindo"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button"
+            android:text="Jawa - Indonesia"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

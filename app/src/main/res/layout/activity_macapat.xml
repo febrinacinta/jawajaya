@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D6B360"
+    tools:context=".Macapat">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logomacapat"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/macapatbig"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="60dp"
+            android:paddingLeft="20dp"
+            android:text="Kumpulan Macapat"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/logomacapat"
+            app:layout_constraintTop_toTopOf="@id/logomacapat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <SearchView
+        android:id="@+id/searchView_macapat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/search_view_background"
+        android:queryHint="Lebokke Judul"
+        android:iconifiedByDefault="false"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/list_macapatbg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_list"
+            android:scaleType="centerCrop" />
+
+        <ListView
+            android:id="@+id/list_macapat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</LinearLayout>
